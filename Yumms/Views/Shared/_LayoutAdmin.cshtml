@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <div class="container">
+            @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                </ul>
+            </div>
+            @Html.ActionLink("Orders", "Index", "Orders", new { area = "" }, new { @class = "sign-button btn btn-outline-light" })
+            @Html.ActionLink("Products", "Index", "Products", new { area = "" }, new { @class = "sign-button btn btn-outline-light" })
+            @Html.ActionLink("Product Types", "Index", "Product_Type", new { area = "" }, new { @class = "sign-button btn btn-outline-light" })
+            @Html.ActionLink("Профиль", "Profile", "Profile", new { area = "" }, new { @class = "sign-button btn btn-outline-light" })
+            @Html.ActionLink("Выйти", "Exit", "UserTools", new { area = "" }, new { @class = "sign-button btn btn-outline-light" })
+        </div>
+    </nav>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Yumms - Магазин одежды
+        </div>
+    </footer>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

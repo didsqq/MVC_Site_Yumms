@@ -1,0 +1,19 @@
+﻿@using Yumms.Models
+@{
+    var user = (User)Session["CurrentUser"];
+    if (user != null)
+    {
+        if (user.root == UserRole.ADMIN)
+        {
+            Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+        }
+        else
+        {
+            Layout = "~/Views/Shared/_LayoutUser.cshtml";
+        }
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}

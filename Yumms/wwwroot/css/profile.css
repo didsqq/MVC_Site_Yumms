@@ -1,0 +1,91 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+    .profile-container h2 {
+        text-align: center;
+        color: #333;
+    }
+
+.profile-details {
+    margin-bottom: 20px;
+}
+
+.profile-item {
+    margin-bottom: 15px;
+}
+
+    .profile-item label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    .profile-item input[type="text"],
+    .profile-item input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .profile-item p {
+        margin: 0;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+.form-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .form-group input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+.edit-profile-btn {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+    .edit-profile-btn:hover {
+        background-color: #ff1493;
+    }
+
+.delete-account-btn {
+    background-color: #ff4c4c;
+    color: #fff;
+}
+
+    .delete-account-btn:hover {
+        background-color: #ff1c1c;
+    }
+
+.logout-btn {
+    background-color: #808080;
+    color: #fff;
+}
+
+    .logout-btn:hover {
+        background-color: #606060;
+    }

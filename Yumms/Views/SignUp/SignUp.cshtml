@@ -1,0 +1,34 @@
+﻿@model Yumms.Models.User
+
+<head>
+    <link rel="stylesheet" href="~/wwwroot/css/registration.css">
+</head>
+@{
+    ViewBag.Title = "Регистрация";
+}
+<body>
+    <div class="form-signin">
+        @using (Html.BeginForm("SignUp", "SignUp", FormMethod.Post))
+        {
+            <h2>Регистрация</h2>
+            <form method="post" action="~/Registration/Registration">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.TextBoxFor(model => model.Password, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Отправить" />
+                </div>
+            </form>
+        }
+    </div>
+</body>

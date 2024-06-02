@@ -1,0 +1,140 @@
+﻿.conteiner {
+    margin: 60px 450px;
+}
+
+.container1 {
+    position: fixed;
+    top: 70px;
+    right: 70px;
+    cursor: pointer;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали по центру */
+    align-items: center; /* Выравнивание по вертикали по центру */
+}
+
+
+.nav-item {
+    color: black;
+    text-decoration: none;
+    margin-left: 25px;
+    font-family: "Monospace", sans-serif;
+    font-size: 15px;
+}
+
+.searching-bar {
+    margin-left: 100px;
+}
+
+.input {
+    border: 1px solid #000000;
+    border-radius: 30px;
+    box-shadow: none;
+    font-size: 1rem;
+    font-weight: 150;
+    line-height: 1;
+    padding: 0.375rem 0.75rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    background: transparent;
+}
+
+.custom-input {
+    box-shadow: 0 0 30px rgba(121, 121, 121, 0.3);
+}
+
+.cart-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+}
+
+
+#main {
+    margin-top: 30px;
+    padding: 1% 0 1% 0;
+    border-top: 0.5px solid grey;
+    border-bottom: 0.5px solid grey;
+    text-align: center;
+}
+
+#border-mid {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#photo-hit {
+    display: flex;
+}
+
+.image-container {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.info {
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 13.1px;
+    text-align: left;
+    line-height: 8px;
+}
+
+#main1 {
+    height: 100px;
+}
+
+#menu {
+    float: left;
+    height: 160px;
+    margin-left: 15%;
+    line-height: 7px;
+    cursor: pointer;
+}
+
+#content {
+    margin-left: 1000px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    flex-shrink: 0;
+}
+
+
+
+footer {
+    height: 100px;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.knopkaup {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+}
+
+.logoup {
+    content: url(/photo/knopkaup.png);
+    width: 150px;
+    height: 70px;
+}
